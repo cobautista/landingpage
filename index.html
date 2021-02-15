@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa Cologne</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+    <link rel="stylesheet" type="text/css" href="index2.css"> 
+    <link rel="shortcut icon" href="../favicon.ico">    
+    <script src="https://kit.fontawesome.com/55aeeaff67.js" crossorigin="anonymous"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/component1.css" /> -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+     <!-- Slides for overlay -->
+
+    <div id="cn-overlay" class="cn-overlay"> 
+
+        <div class="rotate-slider">
+            <ul class="slides">
+              <li>
+                <div class="inner">
+                  <h2>-Peter North</h2>
+                  <h5 class="personTitle">Brand Ambasaddor</h5><br>
+                  <p>My darling likes me smelling good
+                    Always turns her on
+                    That's why I always use Papa Cologne</p>
+                </div>
+              </li>
+              <li>
+                <div class="inner"></div>
+              </li>
+              <li>
+                <div class="inner">
+                  <h2>-Gab</h2>
+                  <h5 class="personTitle">Perfume Virtuoso</h5><br>
+                  <p>Siguradong patok, at wala kang putok
+                    Garantisado</p>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                    <h2>PARTNERS</h2>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <h2>-Chito</h2>
+                  <h5 class="personTitle">CEO</h5><br>
+                  <p>Ang sagot sa lahat ng problema mo sa mga babae. Ang gamot sa lahat ng pagkakabigo ng mga lalaki</p>
+                  
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <h2>Pandemic Edition</h2>
+                  <p>"Mag-aamoy mayaman
+                    Kahit na pagpawisan"</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <svg>
+              <defs>
+                  <clipPath id="slideClip">
+                  <path />
+                  </clipPath>
+              </defs>
+          </svg>
+          
+       </div>
+    
+    <section>
+        <video src="image/papacolognebg.mp4"muted loop autoplay></video>
+       <header id="header">
+           <a href="#"> <img src="image/pclogo.png" id="header-img"> </a>   
+       </header>
+
+<!--papaProduct-->
+<div class="containcatch">
+    
+</div>
+<div class="catchphrase">
+    <h1><br><br>
+Want to smell like one of <span>Forbes</span> Billionaires?
+    </h1>
+    <h2>
+    <span>Papa Cologne</span> is a perfume art at its finest with bold and 
+    striking ingredients for the true perfume connoisseur.
+    </h2>
+    <form id="form">
+        
+        <input id="email" type="email" name="" value="" placeholder="Enter your email" required>
+        <button id="submit">Try our Droplets for FREE</button><br>        
+        <span><input type="checkbox" id="notification" name="notif" value="promo">Get notified with our promotions and receive gift cards!</span>
+    </form>
+</div>
+
+
+
+<div class="containerPapa">
+    <div class="cardPapa">
+        <div class="cologne">
+            <div class="circle"></div>
+            <img src="image/papaproduct.png" alt="papa_cologne">
+        </div>
+        <div class="info">
+            <h1 class="title">Papa Cologne</h1>
+            <h3>Amoy mayaman, kahit na pag-pawisan.</h3>
+           <div class="sizes">
+                <button id="gallon" type="button">Gallon (3785ml)</button>
+                <button id="pint" type="button">Pint (473ml)</button>
+                <button id="classy" type="button">Classy (35ml)</button>
+                <button id="drop" type="button">Droplets</button>
+            </div> 
+            <div class="purchase">
+                <button>Purchase</button>
+            </div> 
+        </div>
+    </div>
+</div>
+
+    </section> 
+ 
+
+   <!-- Start Nav Structure -->
+   <button class="cn-button" id="cn-button">Menu</button>
+   <div class="cn-wrapper" id="cn-wrapper">
+       <ul class="menuTextWrapper">
+         <li><a href="#"><p class="menuTxt">Store</p><span class="fas fa-store"></span></a></li>
+         <li><a href="#"><p class="menuTxt">About<br> Us</p><span class="fas fa-mars"></span></a></li>
+         <li><a href="#"><p class="menuTxt">Buy Now!</p><span class="fas fa-shopping-cart"></span></a></li>
+         <li><a href="#"><p class="menuTxt">Contact<br>Us</p><span class="fas fa-pager"></span></a></li>
+         <li><a href="#"><p class="menuTxt">Promo</p><span class="fas fa-hand-holding-heart"></span></a></li>
+        </ul>
+   </div>
+   
+   <!-- End Nav Structure -->
+</div>
+</div><!-- /container -->
+<script src="js/polyfills.js"></script>
+<script src="js/demo1.js"></script>
+<script src="js/demo2.js"></script>
+
+
+<!--3d Bottle
+<script src="three.min.js"></script>
+<script src="GLTFLoader.js"></script>
+<script>
+    let scene, camera, renderer;
+
+    function init() {
+
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xdddddd);
+
+        camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+        hlight = new THREE.AmbientLight(0x404040,100);
+        scene.add(hlight);
+
+        renderer = new THREE.WebGLRenderer({antialias:true});
+        renderer.setSize(window.innerWidth,window.innerHeight);
+        document.body.appendChild( renderer.domElement );
+               
+    }
+
+    
+
+</script>
+
+-->
+
+
+  <script>
+      /* Radians to Degrees:  x * Math.PI/180; */
+$(function(){
+	/* Settings */
+	var rotateSlider = {
+	  slideHeight : 360,
+	  slideWidth : 480,
+	};
+  
+	/* Do Math and set properties */
+	rotateSlider.slideCount = $('.rotate-slider .slides li').length;
+	rotateSlider.slideAngle = 360 / $('.rotate-slider .slides li').length;
+	rotateSlider.sliderElement = $('.rotate-slider');
+	rotateSlider.slides = $('.rotate-slider .slides li');
+	rotateSlider.slidesContainer = $('.rotate-slider .slides');
+	rotateSlider.slideAngle = 360 / rotateSlider.slideCount;
+	rotateSlider.halfAngleRad = rotateSlider.slideAngle / 2 * Math.PI/180;
+	rotateSlider.innerRadius = 1 / Math.tan(rotateSlider.halfAngleRad) * rotateSlider.slideWidth / 2;
+	rotateSlider.outerRadius = Math.sqrt(Math.pow(rotateSlider.innerRadius + rotateSlider.slideHeight, 2) + (Math.pow((rotateSlider.slideWidth / 2), 2)));
+	rotateSlider.upperArcHeight = rotateSlider.outerRadius - (rotateSlider.innerRadius + rotateSlider.slideHeight);
+	rotateSlider.lowerArcHeight = rotateSlider.innerRadius - (rotateSlider.innerRadius * (Math.cos(rotateSlider.halfAngleRad)));
+	rotateSlider.slideFullWidth = (Math.sin(rotateSlider.halfAngleRad) * rotateSlider.outerRadius) * 2;
+	rotateSlider.slideFullHeight = rotateSlider.upperArcHeight + rotateSlider.slideHeight + rotateSlider.lowerArcHeight
+	rotateSlider.slideSidePadding = (rotateSlider.slideFullWidth - rotateSlider.slideWidth) / 2;
+	rotateSlider.fullArcHeight = rotateSlider.outerRadius - (rotateSlider.outerRadius * (Math.cos(rotateSlider.halfAngleRad)));
+	rotateSlider.lowerArcOffset = (rotateSlider.slideFullWidth - (Math.sin(rotateSlider.halfAngleRad) * rotateSlider.innerRadius * 2)) / 2;
+  
+	/* Set height and width of slider element */
+	rotateSlider.sliderElement.css('height', rotateSlider.slideHeight+'px');
+	rotateSlider.sliderElement.css('width', rotateSlider.slideWidth+'px');
+  
+	/* Set height and width of slides container and offset width*/
+	rotateSlider.slidesContainer.css('height', rotateSlider.outerRadius*2+'px');
+	rotateSlider.slidesContainer.css('width', rotateSlider.outerRadius*2+'px');
+  
+	/* Offset width and arc height */
+	rotateSlider.slidesContainer.css('transform', 'translateX(-50%)');
+	rotateSlider.slidesContainer.css('top', '-'+ rotateSlider.upperArcHeight +'px');
+  
+	/* Generate path for slide clipping */
+	var pathCoords = 'M 0 '+rotateSlider.fullArcHeight;
+	pathCoords += ' A '+rotateSlider.outerRadius+' '+rotateSlider.outerRadius+' 0 0 1 '+rotateSlider.slideFullWidth+' '+rotateSlider.fullArcHeight;
+	pathCoords += ' L '+(rotateSlider.slideFullWidth-rotateSlider.lowerArcOffset)+' '+rotateSlider.slideFullHeight;
+	pathCoords += ' A '+rotateSlider.innerRadius+' '+rotateSlider.innerRadius+' 0 0 0 '+rotateSlider.lowerArcOffset+' '+rotateSlider.slideFullHeight+' Z';
+	$('#slideClip').find('path').attr('d', pathCoords);
+  
+	/* Apply styles to each slide */
+	var i = 0;
+	rotateSlider.slides.each(function(){
+	  /* Set distance from point of rotation */
+	  $(this).css('transform-origin', 'center '+(rotateSlider.innerRadius + rotateSlider.slideHeight)+'px');
+  
+	  /* Set slide Height and Width */
+	  $(this).css('height', rotateSlider.slideHeight+'px');
+	  $(this).css('width', rotateSlider.slideWidth+'px');
+  
+	  /* Set calculated padding for width, upper arc height, and lower arc height */
+	  $(this).css('padding', rotateSlider.upperArcHeight +'px '+rotateSlider.slideSidePadding+'px '+rotateSlider.lowerArcHeight+'px '+rotateSlider.slideSidePadding+'px ');
+  
+	  /* Offset container Arc Height */
+	  $(this).css('top', rotateSlider.upperArcHeight +'px');
+  
+	  /* Offset Width, then Rotate Slide, then offset individual Top Arcs  */
+	  $(this).css('transform', 'translateX(-50%) rotate('+rotateSlider.slideAngle * i+'deg) translateY(-'+ rotateSlider.upperArcHeight +'px)');
+  
+	  /* Add clipping path  */
+	  $(this).css('-webkit-clip-path', 'url(#slideClip)');
+	  $(this).css('clip-path', 'url(#slideClip)');
+  
+	  i++;
+	});
+  
+	/* Set Interval to rotate */
+	var currentRotation = 0;
+	var rotateInterval = window.setInterval(function(){
+	  if(!rotateSlider.slidesContainer.hasClass('animate')){
+		rotateSlider.slidesContainer.addClass('animate')
+	  }
+	  currentRotation = currentRotation - rotateSlider.slideAngle;
+	  rotateSlider.slidesContainer.css('transform', 'translateX(-50%) rotate('+currentRotation+'deg)');
+	}, 4000);
+  });
+
+  </script>
+
+
+ 
+
+   
+</body>
+</html>

@@ -1,0 +1,355 @@
+
+.containerPapa { 
+  margin-left: 58%;  
+  padding-top: 5px;
+  display: flex;
+  outline: none;
+  box-shadow: none;
+  width: 40vw;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 45vw;
+ 
+  z-index: 7;
+}
+.cardPapa {
+  transform-style: preserve-3d;
+  min-height: 70vh;
+  width: 30rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  
+}
+
+.cologne {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cologne img {
+  width: 20rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgba(245, 29, 191, 0.75),
+    rgba(0, 255, 13, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  margin-top: 5%;
+  font-size: 3rem;
+  
+  transition: all 0.75s ease-out;
+  text-align: center;
+}
+.info h3 {
+  text-align: center;
+  font-size: 1rem;
+  padding: 2rem 0rem;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  font-weight:bold;
+  transition: all 0.75s ease-out;
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+  
+}
+.sizes button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: solid rgb(0, 0, 0) 2px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px #f80505;  
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  outline: none;
+  font-size: 12px;
+  font-weight: lighter;
+  width: 10rem;
+}
+.sizes button:focus{ 
+  color: #ffffff;
+  border: solid rgb(0, 0, 0) 2px;
+  box-shadow: 0px 0px 50px 10px rgb(3, 3, 3);
+  animation: anim-shadow .3s forwards;
+  
+}
+@keyframes anim-shadow {
+  100% {
+    box-shadow: 0px 0px 50px 10px rgb(255, 0, 0);
+  }
+}
+
+button.active {
+  background: #585858;
+  color: white;
+}
+.purchase {
+  margin-top: 5rem;
+  transition: all 0.75s ease-out;
+}
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #ffffff;
+  border: none;
+  color: rgb(3, 3, 3);
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  outline: none;
+}
+
+/* -----------MEDIA QUERY----------- */
+
+@media (max-width: 600px) and (min-device-width: 321px) {
+
+  .containerPapa { 
+    margin-left: 35rem;  
+    padding-top: 40rem;
+    display: flex;
+    outline: none;
+    box-shadow: none;
+    width: 0vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 10vw;
+    
+   
+    z-index: 7;
+
+
+  }
+  .cardPapa {
+    transform-style: preserve-3d;
+    min-height: 70vh;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    margin-left: -25rem;
+    
+    
+  }
+  .cologne {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cologne img {
+    width: 10rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+  }
+  .circle {
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(
+      to right,
+      rgba(245, 29, 191, 0.75),
+      rgba(0, 255, 13, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .info h1 {
+    margin-top: 5%;
+    font-size: 2rem;
+    
+    transition: all 0.75s ease-out;
+    text-align: center;
+  }
+  .info h3 {
+    text-align: center;
+    font-size: -1rem;
+    
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    font-weight:bold;
+    transition: all 0.75s ease-out;
+  }
+  .sizes {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.75s ease-out;
+    
+  }
+  .sizes button {
+    
+    background: none;
+    border: solid rgb(0, 0, 0) 2px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px #f80505;  
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    outline: none;
+    font-size: 10px;
+    font-weight: lighter;
+    width: 10rem;
+  }
+  .sizes button:focus{ 
+    color: #ffffff;
+    border: solid rgb(0, 0, 0) 2px;
+    box-shadow: 0px 0px 50px 10px rgb(3, 3, 3);
+    animation: anim-shadow .3s forwards;
+    
+  }
+  @keyframes anim-shadow {
+    100% {
+      box-shadow: 0px 0px 50px 10px rgb(255, 0, 0);
+    }
+  }
+  
+  button.active {
+    background: #585858;
+    color: white;
+  }
+  .purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+  }
+
+  .purchase button {
+    width: 100%;
+    
+    margin-top: -5rem;
+    background: #ffffff;
+    border: none;
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bolder;
+    outline: none;
+  
+  }
+  
+
+  header
+{
+    position: absolute;
+    top: 0;
+    right: 17rem;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+  
+    
+}
+#header-img
+{
+    width: 19vw;
+    height: 19vw;
+    opacity: 0.5;
+    margin-left: 5%;
+    position: absolute;
+    z-index: 99;
+    box-sizing: border-box;
+    padding-right: auto;
+}
+.containcatch {
+
+  position: absolute;
+  z-index: 94;
+  height: 80vw;
+  width: 20rem;
+  margin-left: 4%;
+  margin-top: 10rem;
+  background: linear-gradient(to right,
+  rgba(223, 255, 45, 0.75),  
+  rgba(17, 199, 255, 0.75));
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+
+
+.catchphrase {
+  z-index: 95;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 9rem;
+  margin-left: 4rem;
+  height: 30%;
+  box-sizing: border-box;
+  
+}
+
+.catchphrase h1 {
+  margin-left: 1rem;  
+  font-size: 2rem;
+  width: 40vw;
+}
+.catchphrase h1 span {
+  font-family: 'Work Sans', sans-serif;
+  color: #ddd;
+}
+
+.catchphrase h2 {
+  width: 20vw;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 10%;
+  color: rgb(0, 0, 0);
+}
+.catchphrase h2 span{
+  font-weight: bolder;
+  color: white;
+}
+
+#form span{
+  color: thistle;
+  position: absolute;
+  font-size: 7px;
+  align-content: center;
+  background-color: black;
+  
+  }
+
+  #submit {
+    display: flex;
+    margin-top: 5%;
+    font-weight: 700;
+    position: absolute;
+    height: 1rem;
+    font-size: 10px;
+    margin-bottom: 9rem;
+
+  
+  }
+  
+  #submit:hover { 
+    color: #000000;
+    background-color: teal;
+    border: solid rgb(0, 0, 0) 2px;
+    box-shadow: 0px 0px 50px 10px rgb(3, 3, 3);
+    animation: anim-shadow .3s forwards;
+  
+  }
+
+}
